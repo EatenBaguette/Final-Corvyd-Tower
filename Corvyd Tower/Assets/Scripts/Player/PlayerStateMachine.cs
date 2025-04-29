@@ -139,8 +139,6 @@ public class PlayerStateMachine : MonoBehaviour
         
         Vector3 movement = Vector3.zero;
         
-        hitGround = false;
-        
         if (_verticalSpeed < 0 && Physics.Raycast(
                 transform.position, Vector3.down, out RaycastHit hit))
         {
@@ -153,6 +151,7 @@ public class PlayerStateMachine : MonoBehaviour
             {
                 _isJumping = true;
                 _verticalSpeed = _jumpSpeed;
+                _animator.SetBool("isJumping", true);
             }
             else
             {
@@ -186,9 +185,6 @@ public class PlayerStateMachine : MonoBehaviour
 
     public void HandleJump()
     {
-        bool hitGround = false;
-        
-        _verticalSpeed = _minimumFall;
         Vector3 movement = Vector3.zero;
         
         float horInput = Input.GetAxis("Horizontal");
@@ -208,6 +204,7 @@ public class PlayerStateMachine : MonoBehaviour
                 transform.rotation, direction, _rotSpeed * Time.deltaTime);
         }
         
+        bool hitGround = false;
         if (_verticalSpeed < 0 && Physics.Raycast(
                 transform.position, Vector3.down, out RaycastHit hit))
         {
@@ -216,14 +213,18 @@ public class PlayerStateMachine : MonoBehaviour
 
         if (hitGround)
         {
-            _isJumping = false;
+            if (Input.GetButtonDown("Jump"))
+            {
+                _verticalSpeed = _jumpSpeed;
+            }
+            else
+            {
+                _verticalSpeed = _minimumFall;
+                _isJumping = false;
+            }
         }
         else
         {
-            _isJumping = true;
-            
-            _verticalSpeed = _jumpSpeed;
-        
             _verticalSpeed += _gravity * 5f * Time.deltaTime;
 
             if (_verticalSpeed < _terminalVelocity)
@@ -231,12 +232,18 @@ public class PlayerStateMachine : MonoBehaviour
                 _verticalSpeed = _terminalVelocity;
             }
 
-            if (_contact != null)
+            if (_controller.isGrounded)
             {
-                _animator.SetBool("isJumping", true);
+                if (Vector3.Dot(movement, _contact.normal) < 0)
+                {
+                    movement = _contact.normal * _moveSpeed;
+                }
+                else
+                {
+                    movement += _contact.normal * _moveSpeed;
+                }
             }
         }
-        
         movement.y = _verticalSpeed;
         _controller.Move(movement * Time.deltaTime);
     }
@@ -274,6 +281,8 @@ public class PlayerStateMachine : MonoBehaviour
             if (Input.GetButtonDown("Jump"))
             {
                 _isJumping = true;
+                _verticalSpeed = _jumpSpeed;
+                _animator.SetBool("isJumping", true);
             }
             else
             {
@@ -340,6 +349,8 @@ public class PlayerStateMachine : MonoBehaviour
             if (Input.GetButtonDown("Jump"))
             {
                 _isJumping = true;
+                _verticalSpeed = _jumpSpeed;
+                _animator.SetBool("isJumping", true);
             }
             else
             {
