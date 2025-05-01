@@ -34,6 +34,7 @@ public class EnemyStateMachine : MonoBehaviour
 
     [SerializeField] private float attackInterval = 3f;
     [SerializeField] private int _damageAmount = 5;
+    [SerializeField] private int _deathTime = 3;
 
     private void Start()
     {
@@ -60,6 +61,12 @@ public class EnemyStateMachine : MonoBehaviour
     public void Death()
     {
         SetState(DyingState);
+    }
+
+    public IEnumerator Dying()
+    {
+        yield return new WaitForSeconds(_deathTime);
+        Destroy(this.gameObject);
     }
 
     public void SetNavigation()

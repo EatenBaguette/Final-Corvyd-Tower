@@ -6,9 +6,11 @@ public class EnemyDyingState : EnemyBaseState
 {
     public override void EnterState(EnemyStateMachine enemy)
     {
-        enemy.IsAlive = false;
-        enemy.Death();
         Debug.Log("Enter Enemy Dying State");
+        enemy.IsAlive = false;
+        enemy.animator.SetBool("isDying", true);
+        enemy.StopAllCoroutines();
+        enemy.StartCoroutine("Dying");
     }
 
     public override void UpdateState(EnemyStateMachine enemy) 

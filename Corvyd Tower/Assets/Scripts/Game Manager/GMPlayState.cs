@@ -16,6 +16,7 @@ public class GMPlayState : GMBaseState
         
         CurrentContext.gameOverScreen.SetActive(false);
         CurrentContext.pauseScreen.SetActive(false);
+        CurrentContext.SetDay();
     }
 
     public override void UpdateState()
