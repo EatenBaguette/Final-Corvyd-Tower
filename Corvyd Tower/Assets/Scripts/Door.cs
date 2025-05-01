@@ -5,6 +5,11 @@ using UnityEngine;
 public class Door : MonoBehaviour {
 	public Animator anim;
 	
+	[Space(10)]
+	[Header("Health Properties")]
+	public int Health = 250;
+	public int MaxHealth = 250;
+	
 	void Start () {
 		anim = GetComponent<Animator> ();
 	}
@@ -26,8 +31,12 @@ public class Door : MonoBehaviour {
 			anim.SetBool ("DoorOpen", false);
 			anim.SetBool ("DoorClose", true);
 		}
-		
-
 	}
+	
+	public void Hurt(int damage)
+	{
+		Health -= damage;
+	}
+	
 	
 }
