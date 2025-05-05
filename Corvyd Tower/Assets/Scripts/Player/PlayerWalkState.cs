@@ -9,6 +9,7 @@ public class PlayerWalkState : PlayerBaseState
     
     public override void EnterState()
     {
+        Context.Animator.SetBool("isWalking", true);
         Debug.Log("PlayerWalkState EnterState");
     }
 
@@ -25,6 +26,7 @@ public class PlayerWalkState : PlayerBaseState
 
     public override void ExitState()
     {
+        Context.Animator.SetBool("isWalking", false);
     }
 
     public override void CheckSwitchStates()

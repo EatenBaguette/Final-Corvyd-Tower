@@ -14,11 +14,17 @@ public class PlayerAliveState : PlayerBaseState
         InitSubState();
         
         Debug.Log("PlayerAliveState EnterState");
+
+        Context._gameOver = false;
+        Context._gameManager.gameOver = false;
     }
 
     public override void UpdateState()
     {
+        CheckSwitchStates();
         UpdateStates();
+        Context.HandleShoot();
+        Context.HandleSmash();
     }
 
     public override void FixedUpdateState()
@@ -33,7 +39,7 @@ public class PlayerAliveState : PlayerBaseState
 
     public override void CheckSwitchStates()
     {
-        if (Context.Health <= 0)
+        if (Context.Health <= 0 || Context._gameOver)
         {
             SetState(Factory.Dead);
         }

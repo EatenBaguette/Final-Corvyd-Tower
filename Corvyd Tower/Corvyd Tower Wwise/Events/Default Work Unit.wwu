@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" SchemaVersion="119">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="NightKeepExplore" ID="{AC03B11B-F452-44D5-A55B-B7B44345A3C9}" ShortID="678295593">
+					<ChildrenList>
+						<Event Name="StartNightKeepExplore" ID="{ABAB85DE-ED6F-44DC-8096-ED14373DDD0F}">
+							<ChildrenList>
+								<Action Name="" ID="{1DCDCE5C-8BB7-4AA1-B5AB-372480CBD285}" ShortID="195221742">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vla Random Playlist" ID="{8B2B7454-155C-4ED2-80F3-78D6CE12F30C}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C5F20BD1-5E6C-4F22-8809-88D85ED3A292}" ShortID="1033378237">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vlci Playlist" ID="{FE3308F7-FDD4-405A-9934-C2740CBD259F}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{230B0CE1-3CFA-4CE0-A35E-AAEB1DCCFD68}" ShortID="1014135330">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vlns Playlist" ID="{A6D20BAF-C11B-4746-9799-274E98E81646}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{038CA081-8CB5-4A58-8A2E-F5DAF19AB259}" ShortID="436656543">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemyCbs Playlist" ID="{6FEC83EA-AB08-42DF-B24D-13E0A61ED2BB}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1D63DBFF-23AB-4AE5-8C82-54DD4A350A1D}" ShortID="169718550">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trigger Vla Random" ID="{FB88E250-E7F3-4EB9-8E8F-818099756233}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4AF62B9C-711A-463C-9731-14DBBD237616}" ShortID="1020877441">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightToDay" ID="{24597C2B-66B6-4EC2-AEE4-B8AC848AC5A3}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{06D83048-1E47-490D-831F-59077E5AE3A3}" ShortID="865804055">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Day Playlist" ID="{B07C9AA9-93A7-4B3E-8AD5-F3A524D23B64}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9BFCC330-83DB-4D91-814E-BB339701532E}" ShortID="394249588">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="transToKeepDay_110bpm_4-4_L6m" ID="{37CD7AC6-19F4-4BB7-9C32-F58E89DB1123}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="TriggerViolaNoEnemy" ID="{19F5FD31-7EF0-423B-B676-ACD26FF5D2F7}">
+							<ChildrenList>
+								<Action Name="" ID="{8713728B-409F-46EE-935A-35B43766620D}" ShortID="419228423">
+									<PropertyList>
+										<Property Name="Probability" Type="Real64" Value="40"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vla Random Playlist" ID="{8B2B7454-155C-4ED2-80F3-78D6CE12F30C}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="EndNightKeepExplore" ID="{C56F53EB-BF02-4A54-AE73-9A2C7C44D0EA}">
+							<ChildrenList>
+								<Action Name="" ID="{F1B309EF-A100-468C-861F-7B638E2B731B}" ShortID="506204063">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vla Random Playlist" ID="{8B2B7454-155C-4ED2-80F3-78D6CE12F30C}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9205DB81-3380-41C4-A2BB-DB833063EF0A}" ShortID="957898878">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trigger Vla Random" ID="{FB88E250-E7F3-4EB9-8E8F-818099756233}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{9FA82124-472A-4E63-B6CA-458554FB4E32}" ShortID="899612462">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vlci Playlist" ID="{FE3308F7-FDD4-405A-9934-C2740CBD259F}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F903C3C4-9C58-4D75-93ED-A21D261925A3}" ShortID="280039203">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vlns Playlist" ID="{A6D20BAF-C11B-4746-9799-274E98E81646}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{83841B07-6270-4104-B956-1445FD371DB0}" ShortID="525701952">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemyCbs Playlist" ID="{6FEC83EA-AB08-42DF-B24D-13E0A61ED2BB}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1AEF6442-744D-4AB0-B88A-E41FD4F4833B}" ShortID="658012145">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vla Random Playlist" ID="{8B2B7454-155C-4ED2-80F3-78D6CE12F30C}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="DayKeep" ID="{71534C7F-E1EA-4D42-8949-1650540E33C0}" ShortID="56275123">
+					<ChildrenList>
+						<Event Name="NightToDay" ID="{5A8E7EBB-B600-4E22-BCCB-84C0C6DE9686}">
+							<ChildrenList>
+								<Action Name="" ID="{E66470A5-DCB8-406B-93CB-1B2D428852AA}" ShortID="804001962">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="6"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="transToKeepDay_110bpm_4-4_L6m" ID="{37CD7AC6-19F4-4BB7-9C32-F58E89DB1123}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DE8B67E2-7153-407C-9506-D7ACD1FCCC8B}" ShortID="118254827">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vla Random Playlist" ID="{8B2B7454-155C-4ED2-80F3-78D6CE12F30C}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A85733DA-9849-4780-975B-1F3E7038FD52}" ShortID="260813391">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="12"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+										<Property Name="Volume" Type="Real64" Value="-96"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vla Random Playlist" ID="{8B2B7454-155C-4ED2-80F3-78D6CE12F30C}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{0C5490E3-15C0-49D0-8C6D-A45C9294407C}" ShortID="204706624">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="6"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vlci Playlist" ID="{FE3308F7-FDD4-405A-9934-C2740CBD259F}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{595F0CCB-3AAD-4773-A2C9-3824EDF10DC1}" ShortID="157950535">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="6"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemy Vlns Playlist" ID="{A6D20BAF-C11B-4746-9799-274E98E81646}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FC43935D-C134-4E06-AC6E-CA04176D673F}" ShortID="1052638682">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="6"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightNoEnemyCbs Playlist" ID="{6FEC83EA-AB08-42DF-B24D-13E0A61ED2BB}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E5EE0887-4FCE-4DFD-97EA-A486F0F50B9C}" ShortID="707519566">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Trigger Vla Random" ID="{FB88E250-E7F3-4EB9-8E8F-818099756233}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="StartDay" ID="{9A3ADD83-E2D8-4AAB-AE19-8A1EAF683CAC}">
+							<ChildrenList>
+								<Action Name="" ID="{8E100410-BB5C-43BB-83BF-429A57998AC9}" ShortID="613908495">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="5"/>
+										<Property Name="FadeTime" Type="Real64" Value="6"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="transToKeepDay_110bpm_4-4_L6m" ID="{37CD7AC6-19F4-4BB7-9C32-F58E89DB1123}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C09FC820-C627-4AC6-BBCD-4F79B5A8BB33}" ShortID="538815433">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Day Playlist" ID="{B07C9AA9-93A7-4B3E-8AD5-F3A524D23B64}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DayToNight" ID="{EEBFA760-F3B0-4CF1-AFB1-FFE475F76F05}">
+							<ChildrenList>
+								<Action Name="" ID="{7F437B99-C625-41FF-AC01-56858F7A4FBC}" ShortID="1018062625">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Day Playlist" ID="{B07C9AA9-93A7-4B3E-8AD5-F3A524D23B64}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{01332A50-4311-490F-A16F-85A9A1F22FBE}" ShortID="279438974">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="transToKeepDay_110bpm_4-4_L6m" ID="{37CD7AC6-19F4-4BB7-9C32-F58E89DB1123}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{24158348-E850-485A-9E6F-55F47F635E1F}" ShortID="298977946">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightToDay" ID="{24597C2B-66B6-4EC2-AEE4-B8AC848AC5A3}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="DayToWilderness" ID="{BF9769A8-1187-45C3-BEE5-C0A69BC4E944}">
+							<ChildrenList>
+								<Action Name="" ID="{B5DAB35B-0B52-4A79-B7CA-52B1BDC9AE7D}" ShortID="168105076">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Day Playlist" ID="{B07C9AA9-93A7-4B3E-8AD5-F3A524D23B64}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{42B55E2B-92E8-4EB4-AD19-56C4498C5C73}" ShortID="238399894">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.5"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="transToKeepDay_110bpm_4-4_L6m" ID="{37CD7AC6-19F4-4BB7-9C32-F58E89DB1123}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{DCF293B4-5CBB-4E58-99C6-368A3106CE69}" ShortID="480317393">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NightToDay" ID="{24597C2B-66B6-4EC2-AEE4-B8AC848AC5A3}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Event Name="StartLocationSwitch" ID="{5A8349FA-F406-4F89-B6DB-C71A9CD12A7C}">
+					<ChildrenList>
+						<Action Name="" ID="{3E523615-5531-436F-9F22-B9B8DC7D46A0}" ShortID="918061893">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Location Switch" ID="{7C116FE2-AD9D-4A37-A665-43182683D801}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

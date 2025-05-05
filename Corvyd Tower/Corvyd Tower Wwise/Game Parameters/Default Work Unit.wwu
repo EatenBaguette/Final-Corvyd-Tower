@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{5EE9300C-521B-49D1-9359-89C51BD0C509}" SchemaVersion="119">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{5EE9300C-521B-49D1-9359-89C51BD0C509}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="CombatSize" ID="{05E86C08-A5F0-4E8D-B8AC-DAF2931308FB}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

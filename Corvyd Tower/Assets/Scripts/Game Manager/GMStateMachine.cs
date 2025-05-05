@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
@@ -10,7 +11,6 @@ public class GMStateMachine : MonoBehaviour
     public static GMStateMachine Instance;
     
     /******************* STATES *******************/
-    
     private GMBaseState _currentState;
     private GMBaseState _previousState;
     
@@ -33,12 +33,20 @@ public class GMStateMachine : MonoBehaviour
 
     private LightingManager lightingManager;
 
+    public bool camCanMove = true;
+    public bool playerCanShoot = true;
+
     [SerializeField] private GameObject spiderPrefab;
     [SerializeField] private Transform spawnArea;
     
-    private List<GameObject> _spiders = new List<GameObject>();
+    private List<EnemyStateMachine> _spiders = new List<EnemyStateMachine>();
 
     public bool isDay = true;
+    public bool atKeep = true;
+    private int _wildernessCombatSize = 0;
+    [SerializeField] private TextMeshProUGUI _wildernessText;
+    
+    public bool gameOver = false;
 
     void Awake()
     {
@@ -105,17 +113,29 @@ public class GMStateMachine : MonoBehaviour
         }
     }
 
-    public void SetDay()
+    public void SetDay(bool fade)
     {
+        if (!isDay)
+        {
+            if (fade)
+            {
+                lightingManager.StartCoroutine("FadeToDay");
+            }
+        }
+        else
+        {
+            lightingManager.UpdateLighting(0.5f);
+        }
         isDay = true;
-        lightingManager.UpdateLighting(0.5f);
+        AkSoundEngine.SetState("TimeOfDay", "Day");
         DestroyAllSpiders();
     }
 
     public void SetNight()
     {
         isDay = false;
-        lightingManager.UpdateLighting(0f);
+        AkSoundEngine.SetState("TimeOfDay", "Night");
+        lightingManager.StartCoroutine("FadeToNight");
     }
 
     public void OnClickResume()
@@ -123,11 +143,27 @@ public class GMStateMachine : MonoBehaviour
         isPaused = !isPaused;
     }
 
+    public void OnClickRestart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     public void CreateEnemy()
     {
         if (isDay)
         {
-            return;
+            if (!atKeep)
+            {
+                _wildernessCombatSize += 1;
+                Math.Clamp(_wildernessCombatSize, 0, 2);
+                AkSoundEngine.SetState("WildernessCombatLevel", "Level" + _wildernessCombatSize);
+                _wildernessText.text = "Wilderness Combat Level: " + _wildernessCombatSize;
+            }
         }
         else
         {
@@ -145,8 +181,7 @@ public class GMStateMachine : MonoBehaviour
         {
             Vector3 spawnPos = hit.point;
             GameObject spiderInstance = Instantiate(spiderPrefab, spawnPos, Quaternion.identity);
-            
-            _spiders.Add(spiderInstance);
+            _spiders.Add(spiderInstance.GetComponent<EnemyStateMachine>());
             return spiderInstance;
         }
         return null;
@@ -154,18 +189,68 @@ public class GMStateMachine : MonoBehaviour
 
     public void DestroySpider()
     {
-        if (_spiders[0] != null)
+        if (isDay && !atKeep)
         {
-            _spiders[0].GetComponent<EnemyStateMachine>().Death();
-            _spiders.Remove(_spiders[0]);
+            _wildernessCombatSize -= 1;
+            Math.Clamp(_wildernessCombatSize, 0, 2);
+            AkSoundEngine.SetState("WildernessCombatLevel", "Level" + _wildernessCombatSize);
+            _wildernessText.text = "Wilderness Combat Level: " + _wildernessCombatSize;
+        }
+        if (_spiders != null && _spiders.Count > 0)
+        {
+            if (_spiders[0] != null)
+            {
+                _spiders[0].Death();
+                _spiders.Remove(_spiders[0]);
+            }
         }
     }
 
     public void DestroyAllSpiders()
     {
-        foreach (GameObject spider in _spiders)
+        foreach (EnemyStateMachine spider in _spiders)
         {
-            spider.GetComponent<EnemyStateMachine>().Death();
+            spider.Death();
+        }
+    }
+    
+
+    public void SetCombatRTPC()
+    {
+        int spidersInRange = 0;
+        foreach (EnemyStateMachine spider in _spiders)
+        {
+            if (spider.inRange)
+            {
+                spidersInRange++;
+            }
+        }
+        if (spidersInRange > 0 && spidersInRange <= 5)
+        {
+            AkSoundEngine.SetState("KeepCombatState", "Combat");
+            StartCoroutine(FadeCombatSize(spidersInRange));
+        }
+        else if (spidersInRange >= 5)
+        {
+            AkSoundEngine.SetRTPCValue("CombatSize", 100);
+        }
+        else
+        {
+            AkSoundEngine.SetState("KeepCombatState", "Explore");
+            AkSoundEngine.SetRTPCValue("CombatSize", 0);
+        }
+    }
+
+    public IEnumerator FadeCombatSize(int spidersInRange)
+    {
+        float fadeTime = 1.0f;
+        float elapsedTime = 0f;
+
+        while (elapsedTime < fadeTime)
+        {
+            AkSoundEngine.SetRTPCValue("CombatSize", spidersInRange * 20 * (elapsedTime / fadeTime));
+            elapsedTime += Time.deltaTime;
+            yield return null;
         }
     }
 }

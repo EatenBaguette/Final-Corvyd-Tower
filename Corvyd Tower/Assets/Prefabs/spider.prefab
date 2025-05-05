@@ -237,9 +237,10 @@ GameObject:
   - component: {fileID: 9024475438709801719}
   - component: {fileID: 814959954885480895}
   - component: {fileID: 5706513372601624070}
+  - component: {fileID: -5091198039273877313}
   m_Layer: 0
   m_Name: spider
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,7 +293,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: -1372625422
   m_Radius: 3.07
-  m_Speed: 8.6
+  m_Speed: 4.18
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -325,6 +326,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackInterval: 3
   _damageAmount: 5
+  _deathTime: 2
 --- !u!65 &5706513372601624070
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -340,12 +342,38 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 7.39, y: 3.33, z: 5.55}
   m_Center: {x: 0, y: 1.08, z: 0.9}
+--- !u!143 &-5091198039273877313
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000352882870219360}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 1
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1050512366904586151
 GameObject:
   m_ObjectHideFlags: 0

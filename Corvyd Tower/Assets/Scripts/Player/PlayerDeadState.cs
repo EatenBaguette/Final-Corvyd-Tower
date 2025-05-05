@@ -9,7 +9,7 @@ public class PlayerDeadState : PlayerBaseState
     
     public override void EnterState()
     {
-    
+        Context._gameManager.gameOver = true;
     }
 
     public override void UpdateState()

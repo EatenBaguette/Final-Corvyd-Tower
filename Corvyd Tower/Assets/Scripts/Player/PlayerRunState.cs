@@ -40,6 +40,11 @@ public class PlayerRunState : PlayerBaseState
         {
             SetState(Factory.Jump);
         }
+
+        if (!Context.CheckInput())
+        {
+            SetState(Factory.Idle);
+        }
     }
 
     public override void InitSubState()

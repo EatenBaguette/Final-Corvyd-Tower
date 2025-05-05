@@ -22,15 +22,20 @@ public class EnemyStateMachine : MonoBehaviour
 
     [SerializeField] private Door _door;
 
+    [SerializeField] private PlayerStateMachine _player;
+
     public bool IsAlive
     {
         get => _isAlive;
         set => _isAlive = value;
     }
-    
-    public NavMeshAgent _agent; 
-    [SerializeField] private Transform _target; 
+
+    public NavMeshAgent _agent;
+    public Transform _target;
+
     public Animator animator;
+    
+    [SerializeField] private int rangedDistance = 30;
 
     [SerializeField] private float attackInterval = 3f;
     [SerializeField] private int _damageAmount = 5;
@@ -39,7 +44,8 @@ public class EnemyStateMachine : MonoBehaviour
     private void Start()
     {
         _agent = GetComponent<NavMeshAgent>();
-        _target = GameObject.FindGameObjectWithTag("Gate").transform;
+        _target = GameObject.Find("gameOverTrigger").transform;
+        _player = FindObjectOfType<PlayerStateMachine>();
         animator = GetComponent<Animator>();
         SetState(AliveState);
     }
@@ -72,6 +78,16 @@ public class EnemyStateMachine : MonoBehaviour
     public void SetNavigation()
     {
         _agent.destination = _target.transform.position;
+    }
+
+    public bool inRange = false;
+    public void CheckRange()
+    {
+        if (Vector3.Distance(transform.position, _player.transform.position) <= rangedDistance)
+        {
+            inRange = true;
+        }
+        else {inRange = false;}
     }
 
     public void OnTriggerEnter(Collider other)

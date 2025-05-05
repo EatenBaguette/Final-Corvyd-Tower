@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,8 @@ public class PlayerStateMachine : MonoBehaviour
         get => _currentState;
         set => _currentState = value;
     }
+
+    public GMStateMachine _gameManager;
 
     private CharacterController _controller;
     [SerializeField] private Transform _cameraTransform;
@@ -48,7 +51,16 @@ public class PlayerStateMachine : MonoBehaviour
         set => _animator = value;
     }
 
+    [SerializeField] private GameObject _spellPrefab;
+    [SerializeField] private GameObject _smashPrefab;
+    private GameObject _spell = null;
+    [SerializeField] private int _smashRange = 5;
+
     public bool Grounded = false;
+
+    public bool _gameOver = false;
+
+    public int numOfPowerups = 0;
     
     [Space(10)]
     [Header("Health Properties")]
@@ -86,6 +98,7 @@ public class PlayerStateMachine : MonoBehaviour
             (_controller.height + _controller.radius) /
             _controller.height * 0.95f;
         
+        _gameManager = FindObjectOfType<GMStateMachine>();
     }
 
     void Update()
@@ -198,6 +211,7 @@ public class PlayerStateMachine : MonoBehaviour
             movement = (right * horInput) + (forward * vertInput);
             movement *= _moveSpeed;
             movement = Vector3.ClampMagnitude(movement, _moveSpeed);
+            if (CheckSprint()) {movement *= _sprintMultiplier;}
 
             Quaternion direction = Quaternion.LookRotation(movement);
             transform.rotation = Quaternion.Lerp(
@@ -381,6 +395,113 @@ public class PlayerStateMachine : MonoBehaviour
 
         movement.y = _verticalSpeed;
         _controller.Move(movement * Time.deltaTime);
+    }
+
+    public void HandleShoot()
+    {
+        if (_gameManager.playerCanShoot && Input.GetButtonDown("Fire1"))
+        {
+            Vector3 pos = transform.position;
+            Vector3 dir = _cameraTransform.forward;
+            RaycastHit hit;
+            if (Physics.Raycast(pos, dir, out hit))
+            {
+                StartCoroutine(CastSpell(hit.point));
+
+                EnemyStateMachine enemy = hit.collider.gameObject.GetComponent<EnemyStateMachine>();
+                if (enemy != null) {enemy.Death();}
+            }
+        }
+    }
+
+    public void HandleSmash()
+    {
+        if (_gameManager.playerCanShoot && numOfPowerups > 0 && Input.GetButtonDown("Fire2"))
+        {
+            numOfPowerups--;
+            Math.Clamp(numOfPowerups, 0, 5);
+            StartCoroutine(SmashSpell());
+        }
+    }
+
+    private IEnumerator CastSpell(Vector3 hitPoint)
+    {
+        GameObject spellHit;
+        spellHit = SpellHit(hitPoint);
+
+        yield return new WaitForSeconds(1.0f);
+        
+        Destroy(spellHit);
+        _spell = null;
+    }
+    private GameObject SpellHit(Vector3 pos)
+    {
+        GameObject spellHit = Instantiate(_spellPrefab, pos, Quaternion.identity);
+        _spell = spellHit;
+        return spellHit;
+    }
+
+    private IEnumerator SmashSpell()
+    {
+        GameObject smashSpell = null;
+        RaycastHit hit;
+        if (_spell != null)
+        {
+            Vector3 sendSpellOrigin = new Vector3(
+                _spell.transform.position.x,
+                _spell.transform.position.y + 5,
+                _spell.transform.position.z);
+            if (Physics.Raycast(
+                    sendSpellOrigin, 
+                    Vector3.down, out hit))
+            {
+                smashSpell = SmashHit(hit.point);
+            }
+            yield return new WaitForSeconds(1.0f);
+
+            RaycastHit[] hits = Physics.SphereCastAll(sendSpellOrigin, (1.0f * _smashRange), Vector3.down);
+            foreach (RaycastHit _hit in hits)
+            {
+                if (hit.collider.gameObject.CompareTag("Enemy"))
+                {
+                    _hit.collider.gameObject.GetComponent<EnemyStateMachine>().Death();
+                }
+            }
+            
+            yield return new WaitForSeconds(1.0f);
+            
+            Destroy(smashSpell);
+        }
+        
+        else
+        {
+            Vector3 pos = new Vector3(transform.position.x, transform.position.y + 5, transform.position.z);
+            if (Physics.Raycast(pos, Vector3.down, out hit))
+            {
+                smashSpell = SmashHit(hit.point);
+            }
+            
+            yield return new WaitForSeconds(1.0f);
+            
+            RaycastHit[] hits = Physics.SphereCastAll(pos, (1.0f * _smashRange), Vector3.down);
+            foreach (RaycastHit _Hit in hits)
+            {
+                if (_Hit.collider.gameObject.CompareTag("Enemy"))
+                {
+                    _Hit.collider.gameObject.GetComponent<EnemyStateMachine>().Death();
+                }
+            }
+            
+            yield return new WaitForSeconds(1.0f);
+            
+            Destroy(smashSpell);
+        }
+    }
+
+    private GameObject SmashHit(Vector3 pos)
+    {
+        GameObject smashHit = Instantiate(_smashPrefab, pos, Quaternion.identity);
+        return smashHit;
     }
 
     public void HandleRotation()

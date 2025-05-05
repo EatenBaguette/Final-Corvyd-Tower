@@ -18,6 +18,7 @@ public class EnemyAliveState : EnemyBaseState
     public override void UpdateState(EnemyStateMachine enemy)
     {
         enemy.animator.SetFloat("Speed", enemy._agent.velocity.sqrMagnitude);
+        enemy.CheckRange();
     }
 
     public override void ExitState(EnemyStateMachine enemy)

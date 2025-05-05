@@ -16,13 +16,19 @@ public class GMPlayState : GMBaseState
         
         CurrentContext.gameOverScreen.SetActive(false);
         CurrentContext.pauseScreen.SetActive(false);
-        CurrentContext.SetDay();
+        
+        //Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.visible = false;
+
+        CurrentContext.camCanMove = true;
+        CurrentContext.playerCanShoot = true;
     }
 
     public override void UpdateState()
     {
         // call necessary GMStateMachine Methods here
         CheckSwitchStates();
+        CurrentContext.SetCombatRTPC();
     }
 
     public override void FixedUpdateState()
@@ -47,6 +53,11 @@ public class GMPlayState : GMBaseState
         if (CurrentContext.isPaused)
         {
             SetState(Factory.PauseState);
+        }
+
+        if (CurrentContext.gameOver)
+        {
+            SetState(Factory.GameOverState);
         }
     }
 }
