@@ -17,8 +17,8 @@ public class GMPlayState : GMBaseState
         CurrentContext.gameOverScreen.SetActive(false);
         CurrentContext.pauseScreen.SetActive(false);
         
-        //Cursor.lockState = CursorLockMode.Locked;
-        //Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
 
         CurrentContext.camCanMove = true;
         CurrentContext.playerCanShoot = true;

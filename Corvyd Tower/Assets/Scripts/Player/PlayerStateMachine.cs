@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(CharacterController))]
 public class PlayerStateMachine : MonoBehaviour
@@ -60,7 +62,8 @@ public class PlayerStateMachine : MonoBehaviour
 
     public bool _gameOver = false;
 
-    public int numOfPowerups = 0;
+    private int numOfPowerups = 0;
+    [SerializeField] private TextMeshProUGUI _powerupText;
     
     [Space(10)]
     [Header("Health Properties")]
@@ -514,6 +517,12 @@ public class PlayerStateMachine : MonoBehaviour
 
         _cameraTransform.localEulerAngles = new Vector3(
             _verticalRotation, horizontalRotation, 0);
+    }
+
+    public void IncrementPowerups()
+    {
+        numOfPowerups++;
+        _powerupText.text = "Specials: " + numOfPowerups;
     }
     
     
