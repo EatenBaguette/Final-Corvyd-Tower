@@ -1,8 +1,5 @@
 // STATE MACHINE - CONCRETE STATE
-
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
-using UnityEngine.Timeline;
 
 public class EnemyAliveState : EnemyBaseState
 {
