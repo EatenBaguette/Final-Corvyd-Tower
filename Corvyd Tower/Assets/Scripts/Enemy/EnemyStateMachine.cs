@@ -72,7 +72,7 @@ public class EnemyStateMachine : MonoBehaviour
     public IEnumerator Dying()
     {
         yield return new WaitForSeconds(_deathTime);
-        Destroy(this.gameObject);
+        gameObject.SetActive(false);
     }
 
     public void SetNavigation()

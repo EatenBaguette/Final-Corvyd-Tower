@@ -5,6 +5,15 @@
 			<ChildrenList>
 				<SoundBank Name="MainSoundBank" ID="{E9783ECE-85B4-4133-BD6D-1D37646AB1CB}">
 					<ObjectInclusionList>
+						<ObjectRef Name="Play_SpiderDeath" ID="{102ED5FE-3698-426A-A9A1-F6CE2E01D258}" WorkUnitID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_SpiderCrawl" ID="{1803F130-7F00-450E-8FE8-8A133171031F}" WorkUnitID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_RunSteps" ID="{D5825F14-274E-48A5-8309-0A009C1D6560}" WorkUnitID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_wind" ID="{BA749B0C-452A-49A6-935A-17E2C044DF93}" WorkUnitID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Attack" ID="{14E9ED0A-8E66-4ABD-9BC4-AB01C813DB17}" WorkUnitID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Stop_RunSteps" ID="{16CE0505-6856-4C46-9C03-B16A49F74A59}" WorkUnitID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Special" ID="{D7074BAB-9EB2-4C68-9C95-E0C15F582EE5}" WorkUnitID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_SpiderCrawl" ID="{7831AD37-8C3E-4DFF-A650-1005235F9584}" WorkUnitID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="StopAll" ID="{61306D76-BAAA-4F74-AEE3-19CC7A8D46D0}" WorkUnitID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="StartLocationSwitch" ID="{5A8349FA-F406-4F89-B6DB-C71A9CD12A7C}" WorkUnitID="{5D9ADDB1-A52C-4175-A49E-0F9B029451BD}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>

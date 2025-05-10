@@ -431,6 +431,7 @@ public class PlayerStateMachine : MonoBehaviour
     {
         GameObject spellHit;
         spellHit = SpellHit(hitPoint);
+        
 
         yield return new WaitForSeconds(1.0f);
         
@@ -441,6 +442,7 @@ public class PlayerStateMachine : MonoBehaviour
     {
         GameObject spellHit = Instantiate(_spellPrefab, pos, Quaternion.identity);
         _spell = spellHit;
+        AkSoundEngine.PostEvent("Play_Attack", spellHit);
         return spellHit;
     }
 
@@ -504,6 +506,14 @@ public class PlayerStateMachine : MonoBehaviour
     private GameObject SmashHit(Vector3 pos)
     {
         GameObject smashHit = Instantiate(_smashPrefab, pos, Quaternion.identity);
+        numOfPowerups--;
+        if (numOfPowerups < 0)
+        {
+            numOfPowerups = 0;
+            
+        }
+        _powerupText.text = "Specials: " + numOfPowerups;
+        AkSoundEngine.PostEvent("Play_Special", smashHit);
         return smashHit;
     }
 

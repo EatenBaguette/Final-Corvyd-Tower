@@ -13,7 +13,16 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_ATTACK = 1519321238U;
+        static const AkUniqueID PLAY_RUNSTEPS = 1478922094U;
+        static const AkUniqueID PLAY_SPECIAL = 2482306727U;
+        static const AkUniqueID PLAY_SPIDERCRAWL = 3786703094U;
+        static const AkUniqueID PLAY_SPIDERDEATH = 1450764177U;
+        static const AkUniqueID PLAY_WIND = 1020223172U;
         static const AkUniqueID STARTLOCATIONSWITCH = 3761343370U;
+        static const AkUniqueID STOP_RUNSTEPS = 2362450196U;
+        static const AkUniqueID STOP_SPIDERCRAWL = 901179972U;
+        static const AkUniqueID STOPALL = 3086540886U;
     } // namespace EVENTS
 
     namespace STATES
@@ -84,6 +93,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID COMBATSIZE = 2302543530U;
+        static const AkUniqueID MX_VOLUME = 1441253587U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
@@ -94,7 +104,13 @@ namespace AK
 
     namespace BUSSES
     {
+        static const AkUniqueID AMB = 1117531639U;
+        static const AkUniqueID COMBAT = 2764240573U;
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MX = 1685527054U;
+        static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID SPIDERCRAWL = 3487890775U;
+        static const AkUniqueID STEPS = 1718617278U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

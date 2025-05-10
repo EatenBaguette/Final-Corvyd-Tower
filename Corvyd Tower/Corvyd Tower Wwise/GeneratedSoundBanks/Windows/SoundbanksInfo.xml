@@ -9,13 +9,21 @@
 	</RootPaths>
 	<DialogueEvents/>
 	<SoundBanks>
-		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{2E2B7755-DF49-65B1-E0FC-5FEF808860A9}">
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{85DF1493-7760-BCD0-BD98-80F8084A396E}">
 			<ShortName>MainSoundBank</ShortName>
 			<Path>MainSoundBank.bnk</Path>
 			<Media>
+				<File Id="2919201" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>wind.wav</ShortName>
+					<CachePath>SFX/wind_B0D02920.wem</CachePath>
+				</File>
 				<File Id="10948062" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>HH_L2_04.wav</ShortName>
 					<CachePath>SFX/HH_L2_04_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="43651406" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpiderCrawl.wav</ShortName>
+					<CachePath>SFX/SpiderCrawl_FBC78EF0.wem</CachePath>
 				</File>
 				<File Id="89916584" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>HH_L2_01.wav</ShortName>
@@ -129,9 +137,17 @@
 					<ShortName>H_viola.03_03.wav</ShortName>
 					<CachePath>SFX/H_viola.03_03_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="605192161" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RunSteps.wav</ShortName>
+					<CachePath>SFX/RunSteps_FBC78EF0.wem</CachePath>
+				</File>
 				<File Id="610955221" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>HH_L1_02.wav</ShortName>
 					<CachePath>SFX/HH_L1_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="687850766" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Special.wav</ShortName>
+					<CachePath>SFX/Special_818F3B66.wem</CachePath>
 				</File>
 				<File Id="691209560" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>transToWilderness_135bpm_4-4_L3m.wav</ShortName>
@@ -140,6 +156,10 @@
 				<File Id="722121071" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>HH_L1_03.wav</ShortName>
 					<CachePath>SFX/HH_L1_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="732121000" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpiderAttack.wav</ShortName>
+					<CachePath>SFX/SpiderAttack_818F3B66.wem</CachePath>
 				</File>
 				<File Id="745058092" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>K_viola.01_01.wav</ShortName>
@@ -169,6 +189,10 @@
 					<ShortName>HH_L1_04.wav</ShortName>
 					<CachePath>SFX/HH_L1_04_FBC78EF0.wem</CachePath>
 				</File>
+				<File Id="920390712" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack.wav</ShortName>
+					<CachePath>SFX/Attack_818F3B66.wem</CachePath>
+				</File>
 				<File Id="935802958" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>HH_L2_03.wav</ShortName>
 					<CachePath>SFX/HH_L2_03_FBC78EF0.wem</CachePath>
@@ -188,6 +212,36 @@
 				<Event Id="3428441250" Name="DayToWilderness" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="567535374" Name="EndNightKeepExplore" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="349549728" Name="NightToDay" DurationType="OneShot" DurationMin="24" DurationMax="24"/>
+				<Event Id="1519321238" Name="Play_Attack" MaxAttenuation="15" DurationType="OneShot" DurationMin="0.6666667" DurationMax="0.6666667">
+					<MediaRefs>
+						<MediaRef Id="920390712"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1478922094" Name="Play_RunSteps" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="605192161"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2482306727" Name="Play_Special" MaxAttenuation="20" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="687850766"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3786703094" Name="Play_SpiderCrawl" MaxAttenuation="30" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="43651406"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1450764177" Name="Play_SpiderDeath" MaxAttenuation="10" DurationType="OneShot" DurationMin="0.68127084" DurationMax="0.68127084">
+					<MediaRefs>
+						<MediaRef Id="732121000"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1020223172" Name="Play_wind" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="2919201"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="4004831775" Name="StartDay" DurationType="Infinite">
 					<MediaRefs>
 						<MediaRef Id="534783724"/>
@@ -299,6 +353,9 @@
 					</SwitchContainers>
 				</Event>
 				<Event Id="2473482297" Name="StartNightKeepExplore" DurationType="Infinite"/>
+				<Event Id="2362450196" Name="Stop_RunSteps" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="901179972" Name="Stop_SpiderCrawl" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3086540886" Name="StopAll" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
 				<Event Id="3859088629" Name="TriggerViolaNoEnemy" DurationType="OneShot" DurationMin="0" DurationMax="15.5981045"/>
 			</Events>
 			<GameParameters>
@@ -343,19 +400,44 @@
 				</StateGroup>
 			</StateGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{E8E2F734-3D8C-9E2E-8B83-42EDD7B1ADBF}">
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6E164A0-A99D-43BB-73AF-D107F580341F}">
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 			<Plugins>
+				<Custom>
+					<Plugin Id="966125958" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="3160090811" Name="New_Compressor" LibName="Wwise Compressor" LibId="7077891"/>
+				</ShareSets>
 				<AudioDevices>
 					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
 					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
 				</AudioDevices>
 			</Plugins>
 			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="1117531639" Name="AMB"/>
+				<Bus Id="1685527054" Name="MX">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="966125958"/>
+						</Custom>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="1718617278" Name="Steps"/>
+				<Bus Id="2764240573" Name="Combat"/>
+				<Bus Id="3487890775" Name="SpiderCrawl">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3160090811"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 			<GameParameters>
+				<GameParameter Id="1441253587" Name="MX_Volume"/>
 				<GameParameter Id="2302543530" Name="CombatSize"/>
 			</GameParameters>
 			<StateGroups>
@@ -526,5 +608,5 @@
 			</AcousticTextures>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{715B54B7-AB01-FA81-9655-1532DAFDBE9D}</FileHash>
+	<FileHash>{947A6927-29C9-883E-A808-D0C2B0B441EF}</FileHash>
 </SoundBanksInfo>

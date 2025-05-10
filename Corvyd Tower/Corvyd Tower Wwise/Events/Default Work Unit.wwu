@@ -377,6 +377,110 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="StopAll" ID="{61306D76-BAAA-4F74-AEE3-19CC7A8D46D0}">
+					<ChildrenList>
+						<Action Name="" ID="{4020CAFD-0DD7-4977-B5A6-72A2CFF6E568}" ShortID="1011800368">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SpiderCrawl" ID="{7831AD37-8C3E-4DFF-A650-1005235F9584}">
+					<ChildrenList>
+						<Action Name="" ID="{B1ECEF33-B715-4D6C-8145-19185BD9E0BB}" ShortID="29784758">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SpiderCrawl" ID="{76CF30AB-AF06-4768-9E7F-D37ED2197187}" WorkUnitID="{3B2EADB4-E4A0-4FE1-BFD7-05B03F8A602C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_SpiderCrawl" ID="{1803F130-7F00-450E-8FE8-8A133171031F}">
+					<ChildrenList>
+						<Action Name="" ID="{3BCCB2ED-126B-4141-8CAB-68D4A9A7F0F1}" ShortID="435320199">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SpiderCrawl" ID="{76CF30AB-AF06-4768-9E7F-D37ED2197187}" WorkUnitID="{3B2EADB4-E4A0-4FE1-BFD7-05B03F8A602C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_SpiderDeath" ID="{102ED5FE-3698-426A-A9A1-F6CE2E01D258}">
+					<ChildrenList>
+						<Action Name="" ID="{EA5A09CD-8912-4A8E-A298-FE4B7D326C32}" ShortID="603162266">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="SpiderDeath" ID="{4D73F8F3-BAFC-48E5-8EFF-D199A998FFA1}" WorkUnitID="{3B2EADB4-E4A0-4FE1-BFD7-05B03F8A602C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Attack" ID="{14E9ED0A-8E66-4ABD-9BC4-AB01C813DB17}">
+					<ChildrenList>
+						<Action Name="" ID="{D5E70C70-6BD3-4799-8EDB-14AD57ADD0EE}" ShortID="312728321">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Attack" ID="{5FD29BF0-3EB1-4DAE-A833-3FD174E38F89}" WorkUnitID="{3B2EADB4-E4A0-4FE1-BFD7-05B03F8A602C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Special" ID="{D7074BAB-9EB2-4C68-9C95-E0C15F582EE5}">
+					<ChildrenList>
+						<Action Name="" ID="{2396F39F-FE9D-490D-A46F-08D288C454CE}" ShortID="982368915">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Special" ID="{D55498F0-D575-4AE0-9662-4A189CE0D929}" WorkUnitID="{3B2EADB4-E4A0-4FE1-BFD7-05B03F8A602C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_wind" ID="{BA749B0C-452A-49A6-935A-17E2C044DF93}">
+					<ChildrenList>
+						<Action Name="" ID="{911ABC2A-D305-460C-8B44-D3AEAB2084E7}" ShortID="14392756">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="wind" ID="{C7EC6326-85E9-4AD2-80E6-051CFBF7F40A}" WorkUnitID="{3B2EADB4-E4A0-4FE1-BFD7-05B03F8A602C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_RunSteps" ID="{D5825F14-274E-48A5-8309-0A009C1D6560}">
+					<ChildrenList>
+						<Action Name="" ID="{48A6DE7D-52B6-4AF5-9BC2-6987435EE76A}" ShortID="472099687">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RunSteps" ID="{387667CD-8C4A-4CDB-888A-7FB9C5627010}" WorkUnitID="{3B2EADB4-E4A0-4FE1-BFD7-05B03F8A602C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_RunSteps" ID="{16CE0505-6856-4C46-9C03-B16A49F74A59}">
+					<ChildrenList>
+						<Action Name="" ID="{7EE5603A-20A0-48A0-98B5-5D675B8EADA5}" ShortID="360437442">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="RunSteps" ID="{387667CD-8C4A-4CDB-888A-7FB9C5627010}" WorkUnitID="{3B2EADB4-E4A0-4FE1-BFD7-05B03F8A602C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

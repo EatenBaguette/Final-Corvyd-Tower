@@ -3,6 +3,16 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{4F65BDEB-A797-4D69-96C2-3388F99C580F}">
 			<PropertyList>
+				<Property Name="Event Action List\{102ED5FE-3698-426A-A9A1-F6CE2E01D258}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{14E9ED0A-8E66-4ABD-9BC4-AB01C813DB17}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{16CE0505-6856-4C46-9C03-B16A49F74A59}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{1803F130-7F00-450E-8FE8-8A133171031F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{5A8349FA-F406-4F89-B6DB-C71A9CD12A7C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{61306D76-BAAA-4F74-AEE3-19CC7A8D46D0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{7831AD37-8C3E-4DFF-A650-1005235F9584}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{BA749B0C-452A-49A6-935A-17E2C044DF93}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D5825F14-274E-48A5-8309-0A009C1D6560}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{D7074BAB-9EB2-4C68-9C95-E0C15F582EE5}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="EventView\FilterMode2" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -24,12 +34,13 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value=""/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
-				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
+				<Property Name="MeterView\LastObject1" Type="string" Value="{8E666B67-0F77-41BC-80F0-3F522EB09AC7}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint1" Type="int32" Value="2"/>
 				<Property Name="MeterView\MeterMode1Viewpoint2" Type="int32" Value="3"/>
 				<Property Name="MeterView\MeterMode1Viewpoint3" Type="int32" Value="0"/>
+				<Property Name="Mixing Desk\GroupCollapse\x64_{5ADC8439-69DB-49A6-926B-C7828672402B}" Type="string" Value="BQAAAAAAAAAAAAAAAAAAAAAAAAA="/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFilterVersion" Type="int32" Value="1"/>
 				<Property Name="MonitoringManager\GameObjectFilter\GameObjectFiltersEnable" Type="bool" Value="True"/>
@@ -125,6 +136,7 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="Soundcaster\PreviousSession" Type="string" Value="{A4CB5254-D01A-4106-9E21-86A72D925D8D}"/>
 			</PropertyList>
 		</UserProjectSettings>
 	</UserProjectSettingsInfo>

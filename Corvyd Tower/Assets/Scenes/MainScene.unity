@@ -344,6 +344,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: b7f91eebbf7b042c4935f100dabf121f,
         type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: b7f91eebbf7b042c4935f100dabf121f,
+        type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -397,6 +402,18 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 106618526}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7f91eebbf7b042c4935f100dabf121f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 106618531}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7f91eebbf7b042c4935f100dabf121f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 106618530}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b7f91eebbf7b042c4935f100dabf121f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 106618529}
   m_SourcePrefab: {fileID: 100100000, guid: b7f91eebbf7b042c4935f100dabf121f, type: 3}
 --- !u!1 &106618512 stripped
 GameObject:
@@ -516,6 +533,88 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &106618529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106618512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3715054e4316b42e08369dad1173a26b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 29a5cb2808b474dcba9f5bca978b06c9,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &106618530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106618512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3715054e4316b42e08369dad1173a26b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 28be0f4bc115c416c81bcc66eaa5a141,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &106618531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106618512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4965a04e296b44124a74aca62a832877, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &126806744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1515,7 +1614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _gameManager: {fileID: 0}
   _target: {fileID: 16179969}
-  _rotationSpeed: 1.5
+  _rotationSpeed: 2
 --- !u!114 &330585551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7112,6 +7211,9 @@ GameObject:
   - component: {fileID: 665514163}
   - component: {fileID: 665514162}
   - component: {fileID: 665514160}
+  - component: {fileID: 665514167}
+  - component: {fileID: 665514168}
+  - component: {fileID: 665514169}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -7363,6 +7465,83 @@ MonoBehaviour:
   groupIdInternal: 0
   valueGuidInternal: 
   groupGuidInternal: 
+--- !u!114 &665514167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665514156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d24f865a8ae1401093b2de3f5f00034, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &665514168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665514156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3715054e4316b42e08369dad1173a26b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: 958ca0ea
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8e9ea166fa574481daf7c4e7adc42be5,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+--- !u!114 &665514169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 665514156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a105d2bdc35941b0981de67c2ba6533, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 660147996cbc343d2a60a6c4f8eb89d6,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  attenuationSphereColor: {r: 1, g: 0, b: 0, a: 0.1}
+  LargeModePositions: []
+  multiPositionArray: []
 --- !u!1 &674132359
 GameObject:
   m_ObjectHideFlags: 0
@@ -7507,6 +7686,10 @@ PrefabInstance:
     - target: {fileID: 1599731009599332, guid: 92cc6d2406e4cc547a83ad74708c2d87, type: 3}
       propertyPath: m_Name
       value: WoodenWall_Stairs
+      objectReference: {fileID: 0}
+    - target: {fileID: 1599731009599332, guid: 92cc6d2406e4cc547a83ad74708c2d87, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4945775876562746, guid: 92cc6d2406e4cc547a83ad74708c2d87, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9207,8 +9390,8 @@ Transform:
   m_GameObject: {fileID: 1460528808}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 337.37872, y: 26.409222, z: 121}
-  m_LocalScale: {x: 451, y: 0, z: 147.66101}
+  m_LocalPosition: {x: 286.6, y: 48.1, z: 95.3}
+  m_LocalScale: {x: 536.3, y: 0, z: 133.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -11095,11 +11278,11 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 1.195, y: 1.554, z: 0.51}
+  m_Extents: {x: 2.6, y: 1.554, z: 1.5}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
-  m_Center: {x: 0.68500006, y: 0.15200001, z: -0.093}
+  m_Center: {x: 0.68500006, y: 0, z: -1.5}
   m_TimeToStationary: 0.5
 --- !u!54 &65203744356971619
 Rigidbody:
@@ -11159,11 +11342,11 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 1
-  m_Extents: {x: 1.03, y: 1.554, z: 0.43}
+  m_Extents: {x: 2.35, y: 1.554, z: 1.5}
   m_MoveThreshold: 0.1
   m_Carve: 0
   m_CarveOnlyStationary: 1
-  m_Center: {x: -0.68500006, y: 0.15200001, z: -0.093}
+  m_Center: {x: -0.68500006, y: 0, z: -1.5}
   m_TimeToStationary: 0.5
 --- !u!54 &65745501286675805
 Rigidbody:
@@ -12396,6 +12579,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 665514168}
+        m_TargetAssemblyTypeName: AkTriggerHandler, AK.Wwise.Unity.MonoBehaviour
+        m_MethodName: DoDestroy
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 322286810}
         m_TargetAssemblyTypeName: GMStateMachine, Assembly-CSharp
         m_MethodName: OnClickRestart

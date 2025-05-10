@@ -40,6 +40,7 @@ public class GMStateMachine : MonoBehaviour
     [SerializeField] private Transform spawnArea;
     private List<EnemyStateMachine> _spiders = new List<EnemyStateMachine>();
     private int _spidersToSpawn;
+    private List<EnemyStateMachine> _toRemove = new List<EnemyStateMachine>();
     
     [SerializeField] private GameObject powerupPrefab;
     [SerializeField] private Transform powerupSpawnArea;
@@ -128,19 +129,20 @@ public class GMStateMachine : MonoBehaviour
             isDay = true;
             _dayNumber++;
             _scoreText.text = "Day " + _dayNumber;
-            DestroyAllSpiders();
-            StartCoroutine(DelayDayMusic());
             UpdateSpidersToSpawn();
             UpdatePowerupsToSpawn();
             SpawnPowerups(_powerupsToSpawn);
             CheckInactivePowerups();
+            StartCoroutine(DelayedSetDay());
+            KillAllSpiders();
         }
     }
 
-    private IEnumerator DelayDayMusic()
+    private IEnumerator DelayedSetDay()
     {
         yield return new WaitForSeconds(4f);
         AkSoundEngine.SetState("TimeOfDay", "Day");
+        CheckInactiveSpiders();
     }
 
     public void SetNight()
@@ -173,20 +175,21 @@ public class GMStateMachine : MonoBehaviour
 
     public void CreateEnemy()
     {
-        if (isDay)
-        {
-            if (!atKeep)
-            {
-                _wildernessCombatSize += 1;
-                Math.Clamp(_wildernessCombatSize, 0, 2);
-                AkSoundEngine.SetState("WildernessCombatLevel", "Level" + _wildernessCombatSize);
-                _scoreText.text = "Wilderness Combat Level: " + _wildernessCombatSize;
-            }
-        }
-        else
-        {
-            createEnemy(_spidersToSpawn); 
-        }
+        //if (isDay)
+       // {
+           // if (!atKeep)
+          //  {
+          //      _wildernessCombatSize += 1;
+          //      Math.Clamp(_wildernessCombatSize, 0, 2);
+           //     AkSoundEngine.SetState("WildernessCombatLevel", "Level" + _wildernessCombatSize);
+            //    _scoreText.text = "Wilderness Combat Level: " + _wildernessCombatSize;
+           // }
+       // }
+      //  else
+      //  {
+        //    createEnemy(_spidersToSpawn); 
+       // }
+       createEnemy(1);
     }
     private void createEnemy(int amount)
     {
@@ -206,8 +209,8 @@ public class GMStateMachine : MonoBehaviour
         }
     }
 
-    public void DestroySpider()
-    {
+    //public void DestroySpider()
+    //{
         //if (isDay && !atKeep)
         //{
            // _wildernessCombatSize -= 1;
@@ -215,31 +218,15 @@ public class GMStateMachine : MonoBehaviour
            // AkSoundEngine.SetState("WildernessCombatLevel", "Level" + _wildernessCombatSize);
          //   _scoreText.text = "Wilderness Combat Level: " + _wildernessCombatSize;
       //  }
-        if (_spiders != null && _spiders.Count > 0)
-        {
-            if (_spiders[0] != null)
-            {
-                _spiders[0].Death();
-                _spiders.Remove(_spiders[0]);
-            }
-        }
-    }
-
-    public void DestroyAllPowerups()
-    {
-        foreach (Powerup powerup in _powerups)
-        {
-            Destroy(powerup.gameObject);
-        }
-    }
-
-    public void DestroyAllSpiders()
-    {
-        foreach (EnemyStateMachine spider in _spiders)
-        {
-            spider.Death();
-        }
-    }
+       // if (_spiders != null && _spiders.Count > 0)
+      //  {
+        //    if (_spiders[0] != null)
+        //    {
+         //       _spiders[0].Death();
+         //       _spiders.Remove(_spiders[0]);
+         //   }
+       // }
+  //  }
     
 
     public void SetCombatRTPC()
@@ -323,15 +310,40 @@ public class GMStateMachine : MonoBehaviour
         }
     }
 
+    private void CheckInactiveSpiders()
+    {
+        int count = _spiders.Count;
+        for (int i = count - 1; i >= 0; i--)
+        {
+            EnemyStateMachine enemy = _spiders[i];
+            if (enemy.gameObject.activeInHierarchy == false)
+            {
+                _spiders.RemoveAt(i);
+                Destroy(enemy.gameObject);
+            }
+        }
+    }
+
+    private void KillAllSpiders()
+    {
+        foreach (EnemyStateMachine spider in _spiders)
+        {
+            if (spider.gameObject.activeInHierarchy == true)
+            {
+                spider.Death();
+            }
+        }
+    }
     private void CheckInactivePowerups()
     {
-        foreach (Powerup powerup in _powerups)
+        int count = _powerups.Count;
+        for (int i = count - 1; i >= 0; i--)
         {
+            Powerup powerup = _powerups[i];
             if (powerup.gameObject.activeInHierarchy == false)
             {
-                GameObject instance = powerup.gameObject;
-                _powerups.Remove(powerup);
-                Destroy(instance);
+                _powerups.RemoveAt(i);
+                Destroy(powerup.gameObject);
             }
         }
     }

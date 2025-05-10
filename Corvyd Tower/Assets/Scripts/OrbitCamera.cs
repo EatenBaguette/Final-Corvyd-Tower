@@ -27,7 +27,7 @@ public class OrbitCamera : MonoBehaviour
         
             if (!Mathf.Approximately(horInput, 0))
                 // Slowly rotate camera with arrow keys
-                _rotationY += horInput * _rotationSpeed;
+                _rotationY += (horInput + Input.GetAxis("Mouse X")) * _rotationSpeed;
             // Otherwise, use the mouse X axis
             else
                 _rotationY += Input.GetAxis("Mouse X") * _rotationSpeed * 3;

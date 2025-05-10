@@ -11,6 +11,7 @@ public class PlayerRunState : PlayerBaseState
     {
         Context.Animator.SetBool("isRunning", true);
         Debug.Log("Entering Run State");
+        AkSoundEngine.PostEvent("Play_RunSteps", Context.gameObject);
     }
 
     public override void UpdateState()
@@ -27,6 +28,7 @@ public class PlayerRunState : PlayerBaseState
     public override void ExitState()
     {
         Context.Animator.SetBool("isRunning", false);
+        AkSoundEngine.PostEvent("Stop_RunSteps", Context.gameObject);
     }
 
     public override void CheckSwitchStates()
