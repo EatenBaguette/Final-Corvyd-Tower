@@ -1,0 +1,99 @@
+Event	ID	Name			Wwise Object Path	Notes
+	349549728	NightToDay			\Default Work Unit\DayKeep\NightToDay	
+	567535374	EndNightKeepExplore			\Default Work Unit\NightKeepExplore\EndNightKeepExplore	
+	901179972	Stop_SpiderCrawl			\Default Work Unit\Stop_SpiderCrawl	
+	1020223172	Play_wind			\Default Work Unit\Play_wind	
+	1450764177	Play_SpiderDeath			\Default Work Unit\Play_SpiderDeath	
+	1478922094	Play_RunSteps			\Default Work Unit\Play_RunSteps	
+	1519321238	Play_Attack			\Default Work Unit\Play_Attack	
+	1911220808	DayToNight			\Default Work Unit\DayKeep\DayToNight	
+	2362450196	Stop_RunSteps			\Default Work Unit\Stop_RunSteps	
+	2473482297	StartNightKeepExplore			\Default Work Unit\NightKeepExplore\StartNightKeepExplore	
+	2482306727	Play_Special			\Default Work Unit\Play_Special	
+	3086540886	StopAll			\Default Work Unit\StopAll	
+	3428441250	DayToWilderness			\Default Work Unit\DayKeep\DayToWilderness	
+	3761343370	StartLocationSwitch			\Default Work Unit\StartLocationSwitch	
+	3786703094	Play_SpiderCrawl			\Default Work Unit\Play_SpiderCrawl	
+	3859088629	TriggerViolaNoEnemy			\Default Work Unit\NightKeepExplore\TriggerViolaNoEnemy	
+	4004831775	StartDay			\Default Work Unit\DayKeep\StartDay	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1017143773	KeepCombatState			\Default Work Unit\KeepCombatState	
+	1176052424	Location			\Default Work Unit\Location	
+	2937344820	KeepHealth			\Default Work Unit\KeepHealth	
+	3729505769	TimeOfDay			\Default Work Unit\TimeOfDay	
+	3933296273	WildernessCombatLevel			\Default Work Unit\WildernessCombatLevel	
+
+State	ID	Name	State Group			Notes
+	579523862	Explore	KeepCombatState			
+	748895195	None	KeepCombatState			
+	2764240573	Combat	KeepCombatState			
+	748895195	None	Location			
+	2400105329	Wilderness	Location			
+	2685756106	Keep	Location			
+	748895195	None	KeepHealth			
+	2867897876	KeepHighHealth	KeepHealth			
+	3354185158	KeepLowHealth	KeepHealth			
+	311764537	Day	TimeOfDay			
+	748895195	None	TimeOfDay			
+	1011622525	Night	TimeOfDay			
+	748895195	None	WildernessCombatLevel			
+	2678230381	Level2	WildernessCombatLevel			
+	2678230382	Level1	WildernessCombatLevel			
+	2678230383	Level0	WildernessCombatLevel			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	2302543530	CombatSize			\Default Work Unit\CombatSize	
+
+Effect plug-ins	ID	Name	Type				Notes
+	3451596814	Hall_Medium	Wwise RoomVerb			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	2919201	wind	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\wind_B0D02920.wem		\Actor-Mixer Hierarchy\Default Work Unit\wind		11184144
+	10948062	HH_L2_04	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\HH_L2_04_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\HighHealth\HH_04\HH_L2_04		1814272
+	43651406	SpiderCrawl	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\SpiderCrawl_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpiderCrawl		471282
+	89916584	HH_L2_01	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\HH_L2_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\HighHealth\HH_01\HH_L2_01		1814272
+	129387406	LH_L2_a_01	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\LH_L2_a_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\LowHealth\LH_a_01\LH_L2_a_01		1451436
+	206267364	NightNoEnemyVlci	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\NightNoEnemyVlci_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vlci Playlist\NightNoEnemy Vlci\NightNoEnemyVlci		8708128
+	214286389	HH_L2_06	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\HH_L2_05_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\HighHealth\HH_05\HH_L2_06		1814268
+	262003909	wilderness_04_135bpm_4-4_L8m	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\wilderness_04_135bpm_4-4_L8m_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Wilderness Switch\combatLevel2\wilderness_04_135bpm_4-4_L8m\wilderness_04_135bpm_4-4_L8m		3413432
+	286713262	G_viola_03_03	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\G_viola.03_03_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vla Random Playlist\G_viola_03_03\G_viola_03_03		1182252
+	297427201	E_viola_02_02	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\E_viola.02_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vla Random Playlist\E_viola_02_02\E_viola_02_02		1399698
+	317565029	F_viola_02_02	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\F_viola.02_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vla Random Playlist\F_viola_02_02\F_viola_02_02		1181182
+	346664068	wilderness_03_135bpm_4-4_L8m	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\wilderness_03_135bpm_4-4_L8m_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Wilderness Switch\combatLevel1\wilderness_03_135bpm_4-4_L8m\wilderness_03_135bpm_4-4_L8m		3413432
+	350851616	LH_L1_b_01	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\LH_L1_b_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\LowHealth\LH_b_01\LH_L1_b_01		1451436
+	357207712	LH_L2_b_01	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\LH_L2_b_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\LowHealth\LH_b_01\LH_L2_b_01		1451436
+	382297386	I_viola_01_01	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\I_viola.01_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vla Random Playlist\I_viola_01_01\I_viola_01_01		968336
+	386245710	NightNoEnemyCbs	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\NightNoEnemyCbs_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemyCbs Playlist\NightNoEnemy Cbs\NightNoEnemyCbs		3265612
+	395467903	C_viola_01_01	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\C_viola.01_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vla Random Playlist\C_viola_01_01\C_viola_01_01		944042
+	441190605	HH_L1_05	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\HH_L1_05_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\HighHealth\HH_05\HH_L1_05		1814268
+	453275611	LH_L1_b_02	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\LH_L1_b_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\LowHealth\LH_b_02\LH_L1_b_02		1451436
+	473030366	LH_L1_b_03	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\LH_L1_b_03_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\LowHealth\LH_b_03\LH_L1_b_03		1451436
+	476016803	wilderness_05_135bpm_4-4_L8m	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\wilderness_05_135bpm_4-4_L8m_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Wilderness Switch\combatLevel2\wilderness_05_135bpm_4-4_L8m\wilderness_05_135bpm_4-4_L8m		3413432
+	476097724	LH_L2_b_02	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\LH_L2_b_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\LowHealth\LH_b_02\LH_L2_b_02		1451436
+	490856540	LH_L2_a_02	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\LH_L2_a_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\LowHealth\LH_a_02\LH_L2_a_02		1451436
+	493606474	C_viola_03_03	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\C_viola.03_03_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vla Random Playlist\C_viola_03_03\C_viola_03_03		927850
+	496681720	NightNoEnemy	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\NightNoEnemy_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vlns Playlist\NightNoEnemy\NightNoEnemy		22314428
+	534783724	keepDay_110bpm_4-4_L60m	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\keepDay_110bpm_4-4_L60m_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Day Virtual Folder\Day Playlist\keepDay\keepDay_110bpm_4-4_L60m		26391372
+	543076417	LH_L1_a_01	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\LH_L1_a_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\LowHealth\LH_a_01\LH_L1_a_01		1451436
+	548932540	HH_L1_01	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\HH_L1_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\HighHealth\HH_01\HH_L1_01		1814272
+	575990514	HH_L2_02	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\HH_L2_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\HighHealth\HH_02\HH_L2_02		1814268
+	584582680	wilderness_01_135bpm_4-4_L8m	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\wilderness_01_135bpm_4-4_L8m_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Wilderness Switch\combatLevel0\wilderness_01_135bpm_4-4_L8m\wilderness_01_135bpm_4-4_L8m		3413432
+	598332207	H_viola_03_03	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\H_viola.03_03_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vla Random Playlist\H_viola_03_03\H_viola_03_03		1186682
+	605192161	RunSteps	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\RunSteps_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\RunSteps		501156
+	610955221	HH_L1_02	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\HH_L1_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\HighHealth\HH_02\HH_L1_02		1814268
+	687850766	Special	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\Special_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Special		384096
+	691209560	transToWilderness_135bpm_4-4_L3m	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\transToWilderness_135bpm_4-4_L3m_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Wilderness Switch\transToWilderness\transToWilderness_135bpm_4-4_L3m		1706768
+	722121071	HH_L1_03	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\HH_L1_03_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\HighHealth\HH_03\HH_L1_03		1814272
+	732121000	SpiderDeath	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\SpiderAttack_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\SpiderDeath		65498
+	745058092	K_viola_01_01	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\K_viola.01_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vla Random Playlist\K_viola_01_01\K_viola_01_01		1497514
+	761630012	J_viola_01_01	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\J_viola.01_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vla Random Playlist\J_viola_01_01\J_viola_01_01		1201520
+	802826293	transToKeepDay_110bpm_4-4_L6m	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\transToKeepDay_110bpm_4-4_L6m_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\transToKeepDay_110bpm_4-4_L6m\transToKeepDay_110bpm_4-4_L6m		4608096
+	819736716	wilderness_02_135bpm_4-4_L8m	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\wilderness_02_135bpm_4-4_L8m_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Wilderness Switch\combatLevel1\wilderness_02_135bpm_4-4_L8m\wilderness_02_135bpm_4-4_L8m		3413432
+	876178955	LH_L2_b_03	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\LH_L2_b_03_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\LowHealth\LH_b_03\LH_L2_b_03		1451436
+	880273855	D_viola_01_01	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\D_viola.01_01_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightNoCombatVirtualFolder\NightNoEnemy Vla Random Playlist\D_viola_01_01\D_viola_01_01		948242
+	895890693	HH_L1_04	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\HH_L1_04_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\HighHealth\HH_04\HH_L1_04		1814272
+	920390712	Attack	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\Attack_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Attack		128096
+	935802958	HH_L2_03	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\HH_L2_03_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\HighHealth\HH_03\HH_L2_03		1814272
+	994954238	LH_L1_a_02	Y:\Int Working Media Drive\Berklee\Semester 5\Programming in Unity\FinalProject\Final-Corvyd-Tower\Corvyd Tower\Corvyd Tower Wwise\.cache\Windows\SFX\LH_L1_a_02_FBC78EF0.wem		\Interactive Music Hierarchy\Default Work Unit\Location Switch\Keep Time of Day Switch\Night Switch Group\NightCombatKeepHealthSwitch\LowHealth\LH_a_02\LH_L1_a_02		1451436
+

@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Mac</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="534561221" Type="User" Language="SFX" Hash="{85DF1493-7760-BCD0-BD98-80F8084A396E}">
+			<ShortName>MainSoundBank</ShortName>
+			<Path>MainSoundBank.bnk</Path>
+			<Media>
+				<File Id="2919201" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>wind.wav</ShortName>
+					<CachePath>SFX/wind_B0D02920.wem</CachePath>
+				</File>
+				<File Id="10948062" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HH_L2_04.wav</ShortName>
+					<CachePath>SFX/HH_L2_04_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="43651406" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpiderCrawl.wav</ShortName>
+					<CachePath>SFX/SpiderCrawl_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="89916584" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HH_L2_01.wav</ShortName>
+					<CachePath>SFX/HH_L2_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="129387406" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LH_L2_a_01.wav</ShortName>
+					<CachePath>SFX/LH_L2_a_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="206267364" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NightNoEnemyVlci.wav</ShortName>
+					<CachePath>SFX/NightNoEnemyVlci_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="214286389" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HH_L2_05.wav</ShortName>
+					<CachePath>SFX/HH_L2_05_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="262003909" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>wilderness_04_135bpm_4-4_L8m.wav</ShortName>
+					<CachePath>SFX/wilderness_04_135bpm_4-4_L8m_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="286713262" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>G_viola.03_03.wav</ShortName>
+					<CachePath>SFX/G_viola.03_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="297427201" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>E_viola.02_02.wav</ShortName>
+					<CachePath>SFX/E_viola.02_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="317565029" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>F_viola.02_02.wav</ShortName>
+					<CachePath>SFX/F_viola.02_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="346664068" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>wilderness_03_135bpm_4-4_L8m.wav</ShortName>
+					<CachePath>SFX/wilderness_03_135bpm_4-4_L8m_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="350851616" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LH_L1_b_01.wav</ShortName>
+					<CachePath>SFX/LH_L1_b_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="357207712" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LH_L2_b_01.wav</ShortName>
+					<CachePath>SFX/LH_L2_b_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="382297386" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>I_viola.01_01.wav</ShortName>
+					<CachePath>SFX/I_viola.01_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="386245710" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NightNoEnemyCbs.wav</ShortName>
+					<CachePath>SFX/NightNoEnemyCbs_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="395467903" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C_viola.01_01.wav</ShortName>
+					<CachePath>SFX/C_viola.01_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="441190605" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HH_L1_05.wav</ShortName>
+					<CachePath>SFX/HH_L1_05_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="453275611" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LH_L1_b_02.wav</ShortName>
+					<CachePath>SFX/LH_L1_b_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="473030366" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LH_L1_b_03.wav</ShortName>
+					<CachePath>SFX/LH_L1_b_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="476016803" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>wilderness_05_135bpm_4-4_L8m.wav</ShortName>
+					<CachePath>SFX/wilderness_05_135bpm_4-4_L8m_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="476097724" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LH_L2_b_02.wav</ShortName>
+					<CachePath>SFX/LH_L2_b_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="490856540" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LH_L2_a_02.wav</ShortName>
+					<CachePath>SFX/LH_L2_a_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="493606474" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>C_viola.03_03.wav</ShortName>
+					<CachePath>SFX/C_viola.03_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="496681720" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>NightNoEnemy.wav</ShortName>
+					<CachePath>SFX/NightNoEnemy_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="534783724" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>keepDay_110bpm_4-4_L60m.wav</ShortName>
+					<CachePath>SFX/keepDay_110bpm_4-4_L60m_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="543076417" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LH_L1_a_01.wav</ShortName>
+					<CachePath>SFX/LH_L1_a_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="548932540" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HH_L1_01.wav</ShortName>
+					<CachePath>SFX/HH_L1_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="575990514" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HH_L2_02.wav</ShortName>
+					<CachePath>SFX/HH_L2_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="584582680" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>wilderness_01_135bpm_4-4_L8m.wav</ShortName>
+					<CachePath>SFX/wilderness_01_135bpm_4-4_L8m_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="598332207" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>H_viola.03_03.wav</ShortName>
+					<CachePath>SFX/H_viola.03_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="605192161" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>RunSteps.wav</ShortName>
+					<CachePath>SFX/RunSteps_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="610955221" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HH_L1_02.wav</ShortName>
+					<CachePath>SFX/HH_L1_02_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="687850766" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Special.wav</ShortName>
+					<CachePath>SFX/Special_818F3B66.wem</CachePath>
+				</File>
+				<File Id="691209560" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>transToWilderness_135bpm_4-4_L3m.wav</ShortName>
+					<CachePath>SFX/transToWilderness_135bpm_4-4_L3m_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="722121071" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HH_L1_03.wav</ShortName>
+					<CachePath>SFX/HH_L1_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="732121000" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>SpiderAttack.wav</ShortName>
+					<CachePath>SFX/SpiderAttack_818F3B66.wem</CachePath>
+				</File>
+				<File Id="745058092" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>K_viola.01_01.wav</ShortName>
+					<CachePath>SFX/K_viola.01_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="761630012" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>J_viola.01_01.wav</ShortName>
+					<CachePath>SFX/J_viola.01_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="802826293" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>transToKeepDay_110bpm_4-4_L6m.wav</ShortName>
+					<CachePath>SFX/transToKeepDay_110bpm_4-4_L6m_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="819736716" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>wilderness_02_135bpm_4-4_L8m.wav</ShortName>
+					<CachePath>SFX/wilderness_02_135bpm_4-4_L8m_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="876178955" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LH_L2_b_03.wav</ShortName>
+					<CachePath>SFX/LH_L2_b_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="880273855" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>D_viola.01_01.wav</ShortName>
+					<CachePath>SFX/D_viola.01_01_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="895890693" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HH_L1_04.wav</ShortName>
+					<CachePath>SFX/HH_L1_04_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="920390712" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Attack.wav</ShortName>
+					<CachePath>SFX/Attack_818F3B66.wem</CachePath>
+				</File>
+				<File Id="935802958" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>HH_L2_03.wav</ShortName>
+					<CachePath>SFX/HH_L2_03_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="994954238" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>LH_L1_a_02.wav</ShortName>
+					<CachePath>SFX/LH_L1_a_02_FBC78EF0.wem</CachePath>
+				</File>
+			</Media>
+			<Plugins>
+				<ShareSets>
+					<Plugin Id="3451596814" Name="Hall_Medium" LibName="Wwise RoomVerb" LibId="7733251"/>
+				</ShareSets>
+			</Plugins>
+			<Events>
+				<Event Id="1911220808" Name="DayToNight" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3428441250" Name="DayToWilderness" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="567535374" Name="EndNightKeepExplore" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="349549728" Name="NightToDay" DurationType="OneShot" DurationMin="24" DurationMax="24"/>
+				<Event Id="1519321238" Name="Play_Attack" MaxAttenuation="15" DurationType="OneShot" DurationMin="0.6666667" DurationMax="0.6666667">
+					<MediaRefs>
+						<MediaRef Id="920390712"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1478922094" Name="Play_RunSteps" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="605192161"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2482306727" Name="Play_Special" MaxAttenuation="20" DurationType="OneShot" DurationMin="2" DurationMax="2">
+					<MediaRefs>
+						<MediaRef Id="687850766"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3786703094" Name="Play_SpiderCrawl" MaxAttenuation="30" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="43651406"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1450764177" Name="Play_SpiderDeath" MaxAttenuation="10" DurationType="OneShot" DurationMin="0.68127084" DurationMax="0.68127084">
+					<MediaRefs>
+						<MediaRef Id="732121000"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1020223172" Name="Play_wind" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="2919201"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4004831775" Name="StartDay" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="534783724"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3761343370" Name="StartLocationSwitch" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="691209560"/>
+					</MediaRefs>
+					<SwitchContainers>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1176052424" Id="2685756106"/>
+							<MediaRefs>
+								<MediaRef Id="534783724"/>
+								<MediaRef Id="802826293"/>
+							</MediaRefs>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="3729505769" Id="1011622525"/>
+									<Children>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1017143773" Id="2764240573"/>
+											<Children>
+												<SwitchContainer>
+													<SwitchValue GroupType="State" GroupId="2937344820" Id="2867897876"/>
+													<MediaRefs>
+														<MediaRef Id="10948062"/>
+														<MediaRef Id="89916584"/>
+														<MediaRef Id="214286389"/>
+														<MediaRef Id="441190605"/>
+														<MediaRef Id="548932540"/>
+														<MediaRef Id="575990514"/>
+														<MediaRef Id="610955221"/>
+														<MediaRef Id="722121071"/>
+														<MediaRef Id="895890693"/>
+														<MediaRef Id="935802958"/>
+													</MediaRefs>
+												</SwitchContainer>
+												<SwitchContainer>
+													<SwitchValue GroupType="State" GroupId="2937344820" Id="3354185158"/>
+													<MediaRefs>
+														<MediaRef Id="129387406"/>
+														<MediaRef Id="350851616"/>
+														<MediaRef Id="357207712"/>
+														<MediaRef Id="453275611"/>
+														<MediaRef Id="473030366"/>
+														<MediaRef Id="476097724"/>
+														<MediaRef Id="490856540"/>
+														<MediaRef Id="543076417"/>
+														<MediaRef Id="876178955"/>
+														<MediaRef Id="994954238"/>
+													</MediaRefs>
+												</SwitchContainer>
+											</Children>
+										</SwitchContainer>
+										<SwitchContainer>
+											<SwitchValue GroupType="State" GroupId="1017143773" Id="579523862"/>
+											<MediaRefs>
+												<MediaRef Id="206267364"/>
+												<MediaRef Id="286713262"/>
+												<MediaRef Id="297427201"/>
+												<MediaRef Id="317565029"/>
+												<MediaRef Id="382297386"/>
+												<MediaRef Id="386245710"/>
+												<MediaRef Id="395467903"/>
+												<MediaRef Id="493606474"/>
+												<MediaRef Id="496681720"/>
+												<MediaRef Id="598332207"/>
+												<MediaRef Id="745058092"/>
+												<MediaRef Id="761630012"/>
+												<MediaRef Id="880273855"/>
+											</MediaRefs>
+											<PluginRefs>
+												<ShareSets>
+													<PluginRef Id="3451596814"/>
+												</ShareSets>
+											</PluginRefs>
+										</SwitchContainer>
+									</Children>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+						<SwitchContainer>
+							<SwitchValue GroupType="State" GroupId="1176052424" Id="2400105329"/>
+							<Children>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="3933296273" Id="2678230383"/>
+									<MediaRefs>
+										<MediaRef Id="584582680"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="3933296273" Id="2678230382"/>
+									<MediaRefs>
+										<MediaRef Id="346664068"/>
+										<MediaRef Id="819736716"/>
+									</MediaRefs>
+								</SwitchContainer>
+								<SwitchContainer>
+									<SwitchValue GroupType="State" GroupId="3933296273" Id="2678230381"/>
+									<MediaRefs>
+										<MediaRef Id="262003909"/>
+										<MediaRef Id="346664068"/>
+										<MediaRef Id="476016803"/>
+									</MediaRefs>
+								</SwitchContainer>
+							</Children>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2473482297" Name="StartNightKeepExplore" DurationType="Infinite"/>
+				<Event Id="2362450196" Name="Stop_RunSteps" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="901179972" Name="Stop_SpiderCrawl" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3086540886" Name="StopAll" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="3859088629" Name="TriggerViolaNoEnemy" DurationType="OneShot" DurationMin="0" DurationMax="15.5981045"/>
+			</Events>
+			<GameParameters>
+				<GameParameter Id="2302543530" Name="CombatSize"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1017143773" Name="KeepCombatState">
+					<States>
+						<State Id="579523862" Name="Explore"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2764240573" Name="Combat"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="1176052424" Name="Location">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2400105329" Name="Wilderness"/>
+						<State Id="2685756106" Name="Keep"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2937344820" Name="KeepHealth">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2867897876" Name="KeepHighHealth"/>
+						<State Id="3354185158" Name="KeepLowHealth"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3729505769" Name="TimeOfDay">
+					<States>
+						<State Id="311764537" Name="Day"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1011622525" Name="Night"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3933296273" Name="WildernessCombatLevel">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2678230381" Name="Level2"/>
+						<State Id="2678230382" Name="Level1"/>
+						<State Id="2678230383" Name="Level0"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+		</SoundBank>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{4FF258F5-3466-8E97-C367-C1CAE6340F2B}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<Custom>
+					<Plugin Id="966125958" Name="Meter (Custom)" LibName="Wwise Meter" LibId="8454147"/>
+				</Custom>
+				<ShareSets>
+					<Plugin Id="3160090811" Name="New_Compressor" LibName="Wwise Compressor" LibId="7077891"/>
+				</ShareSets>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="393239870" Name="SFX"/>
+				<Bus Id="1117531639" Name="AMB"/>
+				<Bus Id="1685527054" Name="MX">
+					<PluginRefs>
+						<Custom>
+							<PluginRef Id="966125958"/>
+						</Custom>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="1718617278" Name="Steps"/>
+				<Bus Id="2764240573" Name="Combat"/>
+				<Bus Id="3487890775" Name="SpiderCrawl">
+					<PluginRefs>
+						<ShareSets>
+							<PluginRef Id="3160090811"/>
+						</ShareSets>
+					</PluginRefs>
+				</Bus>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+			<GameParameters>
+				<GameParameter Id="1441253587" Name="MX_Volume"/>
+				<GameParameter Id="2302543530" Name="CombatSize"/>
+			</GameParameters>
+			<StateGroups>
+				<StateGroup Id="1017143773" Name="KeepCombatState">
+					<States>
+						<State Id="579523862" Name="Explore"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="2764240573" Name="Combat"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="1176052424" Name="Location">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2400105329" Name="Wilderness"/>
+						<State Id="2685756106" Name="Keep"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="2937344820" Name="KeepHealth">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2867897876" Name="KeepHighHealth"/>
+						<State Id="3354185158" Name="KeepLowHealth"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3729505769" Name="TimeOfDay">
+					<States>
+						<State Id="311764537" Name="Day"/>
+						<State Id="748895195" Name="None"/>
+						<State Id="1011622525" Name="Night"/>
+					</States>
+				</StateGroup>
+				<StateGroup Id="3933296273" Name="WildernessCombatLevel">
+					<States>
+						<State Id="748895195" Name="None"/>
+						<State Id="2678230381" Name="Level2"/>
+						<State Id="2678230382" Name="Level1"/>
+						<State Id="2678230383" Name="Level0"/>
+					</States>
+				</StateGroup>
+			</StateGroups>
+			<AcousticTextures>
+				<AcousticTexture Id="504532776" Name="Brick">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="18"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="23"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="513139656" Name="Mountain">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="841620460" Name="Concrete">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="6"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="14"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1755085759" Name="Wood_Deep">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="1"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="8"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1873957695" Name="Anechoic">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="1970351858" Name="Fabric">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="3"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="13"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="48"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="72"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2058049674" Name="Wood">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="20"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="35"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2412606308" Name="Carpet">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="46"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="45"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="76"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2637588553" Name="Tile">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="67"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="41"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="12"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="0"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="2928161104" Name="Curtains">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="7"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="60"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="0"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="84"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3195498748" Name="Cork_Tiles">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="14"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="30"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="73"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="3670307564" Name="Drywall">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="2"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="2"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4168643977" Name="Acoustic_Banner">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="37"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="100"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="100"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+				<AcousticTexture Id="4262522749" Name="Wood_Bright">
+					<Properties>
+						<Property Name="AbsorptionLow" Type="Real32" Value="32"/>
+						<Property Name="AbsorptionMidLow" Type="Real32" Value="25"/>
+						<Property Name="AbsorptionMidHigh" Type="Real32" Value="10"/>
+						<Property Name="AbsorptionHigh" Type="Real32" Value="9"/>
+						<Property Name="Scattering" Type="Real32" Value="0"/>
+					</Properties>
+				</AcousticTexture>
+			</AcousticTextures>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{38DEC96D-A47E-9B1D-AD70-CDE3E076CBDC}</FileHash>
+</SoundBanksInfo>

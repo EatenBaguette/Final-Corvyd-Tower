@@ -1,14 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.Design.Serialization;
 using UnityEditor.Presets;
 using UnityEngine;
 
 [ExecuteInEditMode]
 public class LightingManager : MonoBehaviour
 {
+    [SerializeField] private GMStateMachine _gameManager;
     [SerializeField] private Light _directionalLight;
     [SerializeField] private LightingPreset _preset;
     [SerializeField, Range(0, 24)] private float _timeOfDay;
+
+    public float TimeOfDay
+    {
+        get => _timeOfDay;
+        set => _timeOfDay = value;
+    }
+
+    private float _timer;
+    [SerializeField] private float _nightTime = 200f;
+    [SerializeField] private float _dayTime = 100f;
+    [SerializeField] private float _dayStartHour = 6.0f;
+    [SerializeField] private float _dayEndHour = 8.0f;
+
+    private bool isDay = false;
+
+    private void Start()
+    {
+        _timer = 0.0f;
+        _gameManager= FindObjectOfType<GMStateMachine>();
+        _timeOfDay = _dayStartHour;
+        UpdateLighting(_timeOfDay/24f);
+    }
 
     private void Update()
     {
@@ -19,13 +43,43 @@ public class LightingManager : MonoBehaviour
 
         if (Application.isPlaying)
         {
-            return;
-            _timeOfDay += Time.deltaTime;
-            _timeOfDay %= 24;
-            UpdateLighting(_timeOfDay/24);
+            _timer += Time.deltaTime;
+            if (_timer >= _dayTime + _nightTime)
+            {
+                _timer -= _dayTime + _nightTime;
+            }
+            
+            if (_timeOfDay >= _dayStartHour && _timeOfDay <= _dayEndHour)
+            {
+                if (!isDay)
+                {
+                    isDay = true;
+                    _gameManager.SetDay();
+                }
+                _timeOfDay += Time.deltaTime * (_dayEndHour - _dayStartHour) / _dayTime;
+                
+                _timeOfDay %= 24;
+                UpdateLighting(_timeOfDay / 24f);
+            }
+            else
+            {
+                if (isDay)
+                {
+                    isDay = false;
+                    _gameManager.SetNight();
+                }
+
+                _timeOfDay += Time.deltaTime * (24f - (_dayEndHour - _dayStartHour)) / _nightTime;
+                _timeOfDay %= 24;
+                UpdateLighting(_timeOfDay / 24f);
+            }
+        }
+        else
+        {
+            UpdateLighting(_timeOfDay / 24f);
         }
     }
-    
+
     public void UpdateLighting(float timePercent)
     {
         RenderSettings.ambientLight = _preset.AmbientColor.Evaluate(timePercent);

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6EEBCE25-868A-4CF4-85CD-67D87593E9EA}" SchemaVersion="119">
+	<Effects>
+		<WorkUnit Name="Default Work Unit" ID="{6EEBCE25-868A-4CF4-85CD-67D87593E9EA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="New_Compressor" ID="{1E2D40D0-E233-4A24-8C7A-A263D7E94265}" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+					<PropertyList>
+						<Property Name="AttackTime" Type="Real32" Value="2"/>
+						<Property Name="Ratio" Type="Real32" Value="3.1"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="2"/>
+						<Property Name="Threshold" Type="Real32" Value="-26.9"/>
+					</PropertyList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
+	</Effects>
+</WwiseDocument>

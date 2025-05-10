@@ -9,6 +9,14 @@ public class GMGameOverState : GMBaseState
 
     public override void EnterState()
     {
+        Time.timeScale = 0;
+        CurrentContext.gameOverScreen.SetActive(true);
+        
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        
+        CurrentContext.camCanMove = false;
+        CurrentContext.playerCanShoot = false;
     }
 
     public override void UpdateState()

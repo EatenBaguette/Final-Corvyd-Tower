@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{90D00F9E-4819-480E-B504-622640FABD29}" SchemaVersion="119">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{90D00F9E-4819-480E-B504-622640FABD29}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="KeepHealth" ID="{D7C42789-4CFB-41F7-AD43-D1A5AAEAA86A}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{0A5507E4-E20D-45BB-B061-59B5516DB41C}"/>
+						<State Name="KeepHighHealth" ID="{194EF85A-034E-479A-9427-183CC72E2302}"/>
+						<State Name="KeepLowHealth" ID="{E6196119-4C8A-4791-B8CB-B6369846480F}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="TimeOfDay" ID="{F8C62D13-BB26-4A9C-B0DA-7F05EE7E38F5}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{A3AC4BEE-B054-4CC0-9EC8-FAB93F6292D7}"/>
+						<State Name="Day" ID="{7EA1AD67-9199-452F-9791-040D520A539C}"/>
+						<State Name="Night" ID="{DFE82C1B-401D-4D23-93E6-44ECEBD80968}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="Night" ID="{DFE82C1B-401D-4D23-93E6-44ECEBD80968}"/>
+							<EndState Name="Day" ID="{7EA1AD67-9199-452F-9791-040D520A539C}"/>
+							<Time>3</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+				<StateGroup Name="KeepCombatState" ID="{76738D47-7926-437F-887F-DCD04A6A2D9F}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="3"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{EEB9B068-00FB-4750-B8E2-A5A8C517E483}"/>
+						<State Name="Combat" ID="{149987C8-BDB8-4922-8312-FC7C06DF8DA2}"/>
+						<State Name="Explore" ID="{7DEBE2A2-6239-4F27-8C9F-8F5EB1E783D9}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Location" ID="{407B18CB-923F-4FDF-A573-2B1DA0341D36}">
+					<ChildrenList>
+						<State Name="None" ID="{48BA8B6C-20BD-4F30-A51D-23ADA3C11CBA}"/>
+						<State Name="Keep" ID="{DAC066C2-207E-498C-B675-D190EB6196C1}"/>
+						<State Name="Wilderness" ID="{52EFA5AA-0522-432A-AFEB-45B3C5DAD352}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="WildernessCombatLevel" ID="{7F3365CF-F449-41EC-9A1F-B6618639598F}">
+					<ChildrenList>
+						<State Name="None" ID="{3C34D68E-ACE2-4589-8965-682FA13BBABA}"/>
+						<State Name="Level0" ID="{D908F28F-5B16-42D3-9B0E-53DEB898FF84}"/>
+						<State Name="Level1" ID="{01A44745-D573-4CF7-B666-0EA2AB1E7312}"/>
+						<State Name="Level2" ID="{8AE0171D-4317-4056-9C14-38EBC791887A}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

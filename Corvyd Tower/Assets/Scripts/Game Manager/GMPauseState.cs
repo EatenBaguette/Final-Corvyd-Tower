@@ -13,6 +13,12 @@ public class GMPauseState : GMBaseState
         
         Time.timeScale = 0;
         CurrentContext.pauseScreen.SetActive(true);
+        
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        
+        CurrentContext.camCanMove = false;
+        CurrentContext.playerCanShoot = false;
     }
 
     public override void UpdateState()

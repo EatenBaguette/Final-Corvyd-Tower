@@ -33,7 +33,18 @@ public class PlayerJumpState : PlayerBaseState
     {
         if (!Context.CheckJump())
         {
-            SetState(Factory.Idle);
+            if (Context.CheckInput())
+            {
+                if (Context.CheckSprint()) {SetState(Factory.Run);}
+                else
+                {
+                    SetState(Factory.Walk);
+                }
+            }
+            else
+            {
+                SetState(Factory.Idle);
+            }
         }
     }
 

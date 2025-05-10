@@ -9,7 +9,9 @@ public class PlayerWalkState : PlayerBaseState
     
     public override void EnterState()
     {
+        Context.Animator.SetBool("isWalking", true);
         Debug.Log("PlayerWalkState EnterState");
+        AkSoundEngine.PostEvent("Play_RunSteps", Context.gameObject);
     }
 
     public override void UpdateState()
@@ -25,6 +27,8 @@ public class PlayerWalkState : PlayerBaseState
 
     public override void ExitState()
     {
+        Context.Animator.SetBool("isWalking", false);
+        AkSoundEngine.PostEvent("Stop_RunSteps", Context.gameObject);
     }
 
     public override void CheckSwitchStates()

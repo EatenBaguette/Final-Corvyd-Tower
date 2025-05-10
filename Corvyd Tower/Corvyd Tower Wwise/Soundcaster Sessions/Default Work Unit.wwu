@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9D6BABE6-1CE4-42BB-B8C6-81EC8406CA6C}" SchemaVersion="119">
+	<SoundcasterSessions>
+		<WorkUnit Name="Default Work Unit" ID="{9D6BABE6-1CE4-42BB-B8C6-81EC8406CA6C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{E118B7EE-075B-42E9-AAAE-191ED3870699}">
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="CombatSize" ID="{05E86C08-A5F0-4E8D-B8AC-DAF2931308FB}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Level0" ID="{D908F28F-5B16-42D3-9B0E-53DEB898FF84}"/>
+						<CurrentStateRef Name="KeepHighHealth" ID="{194EF85A-034E-479A-9427-183CC72E2302}"/>
+						<CurrentStateRef Name="Explore" ID="{7DEBE2A2-6239-4F27-8C9F-8F5EB1E783D9}"/>
+						<CurrentStateRef Name="Day" ID="{7EA1AD67-9199-452F-9791-040D520A539C}"/>
+						<CurrentStateRef Name="Keep" ID="{DAC066C2-207E-498C-B675-D190EB6196C1}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+				<SoundcasterSession Name="New Soundcaster Session_01" ID="{A4CB5254-D01A-4106-9E21-86A72D925D8D}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Location Switch" ID="{7C116FE2-AD9D-4A37-A665-43182683D801}" WorkUnitID="{380B371C-D72F-414B-97E9-874D7636D766}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="wind" ID="{C7EC6326-85E9-4AD2-80E6-051CFBF7F40A}" WorkUnitID="{3B2EADB4-E4A0-4FE1-BFD7-05B03F8A602C}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="MX_Volume" ID="{52B14417-EC0F-46C6-A757-AAB667CDF046}"/>
+							<Value>-40.4839857651246</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Level0" ID="{D908F28F-5B16-42D3-9B0E-53DEB898FF84}"/>
+						<CurrentStateRef Name="KeepHighHealth" ID="{194EF85A-034E-479A-9427-183CC72E2302}"/>
+						<CurrentStateRef Name="Explore" ID="{7DEBE2A2-6239-4F27-8C9F-8F5EB1E783D9}"/>
+						<CurrentStateRef Name="Night" ID="{DFE82C1B-401D-4D23-93E6-44ECEBD80968}"/>
+						<CurrentStateRef Name="Keep" ID="{DAC066C2-207E-498C-B675-D190EB6196C1}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true"/>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundcasterSessions>
+</WwiseDocument>

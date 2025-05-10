@@ -10,6 +10,8 @@ public class EnemyDyingState : EnemyBaseState
         enemy.IsAlive = false;
         enemy.animator.SetBool("isDying", true);
         enemy.StopAllCoroutines();
+        enemy._target = null;
+        enemy.inRange = false;
         enemy.StartCoroutine("Dying");
     }
 

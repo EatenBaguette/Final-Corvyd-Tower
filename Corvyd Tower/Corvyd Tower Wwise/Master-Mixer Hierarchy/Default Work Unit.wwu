@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F79C0A7A-A175-4725-91EA-912CD1B83BDF}" SchemaVersion="119">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{F79C0A7A-A175-4725-91EA-912CD1B83BDF}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{95C1625C-C6B1-41EF-99F4-2E7DB6E653EB}" WorkUnitID="{1E744A9F-B18C-4AC3-B5D9-B38499F5D661}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="MX" ID="{793E95A0-A2EC-4EF1-A576-58F51E8E0BBE}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>3584</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<Reference>
+										<Local>
+											<EffectSlot Name="" ID="{EDE1E978-5256-46EE-A393-28561247B60F}" ShortID="321205335">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Meter (Custom)" ID="{4D7A4704-8AE9-4E98-9DFC-40A09574CBFC}" ShortID="966125958" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+																<PropertyList>
+																	<Property Name="AttackTime" Type="Real32" Value="1"/>
+																	<Property Name="MeterMode" Type="int32" Value="1"/>
+																	<Property Name="MeterScope" Type="int32" Value="1"/>
+																	<Property Name="ReleaseTime" Type="Real32" Value="1"/>
+																</PropertyList>
+																<PluginData>
+	<GameParameter Name="MX_Volume" ID="{52B14417-EC0F-46C6-A757-AAB667CDF046}"/>
+</PluginData>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="SFX" ID="{EF1D25EA-604A-4365-92FC-152F4EB3296D}">
+							<ChildrenList>
+								<Bus Name="SpiderCrawl" ID="{BB748771-9015-478D-A364-437F39493711}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<Reference>
+												<Local>
+													<EffectSlot Name="" ID="{3618D6E9-FF7B-44B6-A69B-448B14B90FA5}" ShortID="527071292">
+														<ReferenceList>
+															<Reference Name="Effect" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+																<ObjectRef Name="New_Compressor" ID="{1E2D40D0-E233-4A24-8C7A-A263D7E94265}" WorkUnitID="{6EEBCE25-868A-4CF4-85CD-67D87593E9EA}"/>
+															</Reference>
+														</ReferenceList>
+													</EffectSlot>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
+								<Bus Name="Combat" ID="{2939C1AD-BD8B-4298-8D32-D57F0B34D0EF}"/>
+								<Bus Name="Steps" ID="{AB46D809-1C56-4B50-95EE-EAE1ED616E47}"/>
+							</ChildrenList>
+						</Bus>
+						<Bus Name="AMB" ID="{8E666B67-0F77-41BC-80F0-3F522EB09AC7}">
+							<PropertyList>
+								<Property Name="BusChannelConfig" Type="int32">
+									<ValueList>
+										<Value>3584</Value>
+									</ValueList>
+								</Property>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{97B2D37A-A656-40EB-BB8F-ECE5B3CB4642}" ShortID="268596619">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="MX_Volume" ID="{52B14417-EC0F-46C6-A757-AAB667CDF046}" WorkUnitID="{5EE9300C-521B-49D1-9359-89C51BD0C509}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{3015F95A-5AFD-4E54-B804-691FE8F3E045}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>-48</XPos>
+																		<YPos>0</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-13.52077</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+							<DuckingList>
+								<DuckItem>
+									<BusRef Name="MX" ID="{793E95A0-A2EC-4EF1-A576-58F51E8E0BBE}"/>
+									<DuckingParam>
+										<Volume>-6</Volume>
+										<FadeInTime>2</FadeInTime>
+										<FadeOutTime>2</FadeOutTime>
+										<FadeCurve>FadeLinear</FadeCurve>
+										<TargetProp>BusVolume</TargetProp>
+									</DuckingParam>
+								</DuckItem>
+							</DuckingList>
+						</Bus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
